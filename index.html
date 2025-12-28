@@ -3,23 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rabia Zeynep'e Özel Kokina Hediye | Hüseyin</title>
+    <title>Rabia Zeynep'e Kokina Hediye | Hüseyin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-red: #8B0000;
-            --dark-red: #5A0000;
-            --gold: #D4AF37;
-            --light-gold: #F4E8C1;
-            --dark-green: #0A3D2E;
-            --light-green: #E8F4E8;
-            --cream: #FDF9F3;
-            --dark: #1A1A1A;
-            --light-gray: #F5F5F5;
-            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --primary: #8B0000;
+            --secondary: #0A3D2E;
+            --accent: #D4AF37;
+            --light: #FDF9F3;
         }
         
         * {
@@ -30,644 +22,404 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            color: var(--dark);
-            background-color: var(--cream);
+            background: linear-gradient(135deg, #fdf6f9 0%, #f8e8ee 100%);
+            color: #333;
             line-height: 1.6;
-            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
         }
         
         .container {
             max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+            width: 100%;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(139, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.2);
         }
         
-        /* Hero Bölümü */
-        .hero {
-            background: linear-gradient(rgba(10, 61, 46, 0.85), rgba(90, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #5A0000 100%);
             color: white;
-            padding: 100px 0 80px;
             text-align: center;
+            padding: 60px 40px;
             position: relative;
             overflow: hidden;
         }
         
-        .hero::before {
+        header::after {
             content: "";
             position: absolute;
-            top: 0;
+            bottom: 0;
             left: 0;
             width: 100%;
-            height: 100%;
-            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4af37' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
-            opacity: 0.15;
+            height: 10px;
+            background: linear-gradient(90deg, var(--accent), transparent, var(--accent));
         }
         
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .hero h1 {
+        h1 {
             font-family: 'Playfair Display', serif;
             font-size: 3.5rem;
-            font-weight: 700;
             margin-bottom: 20px;
-            letter-spacing: -0.5px;
+            font-weight: 700;
         }
         
-        .hero-subtitle {
+        .subtitle {
             font-size: 1.3rem;
-            font-weight: 300;
-            margin-bottom: 40px;
             opacity: 0.9;
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
         }
         
-        .divider {
-            width: 100px;
-            height: 3px;
-            background: var(--gold);
-            margin: 30px auto;
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            min-height: 500px;
         }
         
-        /* Kokina Görsel Bölümü */
-        .kokina-showcase {
-            padding: 80px 0;
-            background-color: var(--light-gray);
-        }
-        
-        .kokina-container {
+        .image-section {
+            background: linear-gradient(135deg, #0A3D2E 0%, #1B5E45 100%);
             display: flex;
-            flex-wrap: wrap;
-            gap: 50px;
             align-items: center;
             justify-content: center;
+            padding: 40px;
+            position: relative;
         }
         
         .kokina-image {
-            flex: 1;
-            min-width: 300px;
-            max-width: 500px;
-            position: relative;
-        }
-        
-        .kokina-main-img {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 8px solid white;
             transition: transform 0.5s ease;
+            object-fit: cover;
         }
         
-        .kokina-main-img:hover {
-            transform: translateY(-10px);
+        .kokina-image:hover {
+            transform: scale(1.02);
         }
         
-        .kokina-badge {
+        .image-badge {
             position: absolute;
-            top: -15px;
-            right: -15px;
-            background-color: var(--primary-red);
-            color: white;
-            padding: 12px 20px;
+            top: 20px;
+            right: 20px;
+            background: var(--accent);
+            color: var(--secondary);
+            padding: 10px 20px;
             border-radius: 50px;
             font-weight: 600;
             font-size: 0.9rem;
-            box-shadow: 0 5px 15px rgba(139, 0, 0, 0.3);
-            z-index: 3;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 2;
         }
         
-        .kokina-details {
-            flex: 1;
-            min-width: 300px;
-            max-width: 600px;
+        .message-section {
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         
-        .kokina-details h2 {
+        .message-box {
+            background: #FFF9F9;
+            border-radius: 16px;
+            padding: 40px;
+            border-left: 6px solid var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        
+        h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: var(--dark-green);
+            color: var(--primary);
+            font-size: 2.2rem;
             margin-bottom: 25px;
-        }
-        
-        .kokina-features {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-        
-        .feature {
             display: flex;
             align-items: center;
             gap: 15px;
         }
         
-        .feature-icon {
-            width: 50px;
-            height: 50px;
-            background-color: var(--light-green);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--dark-green);
-            font-size: 1.2rem;
-        }
-        
-        /* Mesaj Bölümü */
-        .message-section {
-            padding: 100px 0;
-            background-color: white;
-        }
-        
-        .message-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 16px;
-            padding: 60px;
-            box-shadow: var(--shadow);
-            position: relative;
-            border: 1px solid rgba(212, 175, 55, 0.2);
-        }
-        
-        .message-container::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(to right, var(--primary-red), var(--gold));
-            border-radius: 16px 16px 0 0;
-        }
-        
-        .message-header {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-        
-        .message-icon {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.8rem;
-        }
-        
-        .message-header h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
-            color: var(--dark);
+        h2 i {
+            color: var(--accent);
         }
         
         .message-text {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             line-height: 1.8;
             color: #444;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         
         .message-text p {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
         
         .signature {
             text-align: right;
             margin-top: 40px;
-            padding-top: 30px;
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding-top: 20px;
+            border-top: 2px solid rgba(139, 0, 0, 0.1);
         }
         
         .signature-name {
             font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            color: var(--dark-green);
+            font-size: 2rem;
+            color: var(--primary);
             margin-bottom: 5px;
         }
         
-        .signature-title {
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #F8F0F3;
             color: #666;
-            font-size: 1rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
         }
         
-        /* Sembolizm Bölümü */
-        .symbolism-section {
-            padding: 80px 0;
-            background-color: var(--light-green);
-        }
-        
-        .section-title {
-            text-align: center;
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: var(--dark-green);
-            margin-bottom: 60px;
-        }
-        
-        .symbolism-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .symbolism-card {
-            background: white;
-            border-radius: 12px;
-            padding: 40px 30px;
-            text-align: center;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s ease;
-        }
-        
-        .symbolism-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .symbolism-icon {
-            width: 70px;
-            height: 70px;
-            background-color: var(--light-gold);
-            border-radius: 50%;
+        .symbolism {
             display: flex;
-            align-items: center;
             justify-content: center;
-            margin: 0 auto 25px;
-            color: var(--gold);
-            font-size: 1.8rem;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
         }
         
-        .symbolism-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            color: var(--dark-green);
-            margin-bottom: 15px;
-        }
-        
-        /* Footer */
-        .footer {
-            background-color: var(--dark-green);
-            color: white;
-            padding: 70px 0 40px;
+        .symbol {
             text-align: center;
+            color: var(--primary);
+            font-weight: 600;
         }
         
-        .footer-content {
-            max-width: 800px;
-            margin: 0 auto;
+        .symbol i {
+            display: block;
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: var(--accent);
         }
         
-        .footer-logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-            color: var(--light-gold);
-        }
-        
-        .footer-text {
-            opacity: 0.8;
-            margin-bottom: 40px;
-            font-size: 1.1rem;
-        }
-        
-        .copyright {
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
-        
-        /* Responsive Tasarım */
         @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 2.8rem;
+            .content {
+                grid-template-columns: 1fr;
             }
             
-            .kokina-container {
-                flex-direction: column;
+            h1 {
+                font-size: 2.5rem;
             }
             
-            .kokina-image, .kokina-details {
-                max-width: 100%;
-            }
-            
-            .message-container {
+            .message-section {
                 padding: 40px 30px;
+            }
+            
+            .kokina-image {
+                max-height: 350px;
             }
         }
         
         @media (max-width: 768px) {
-            .hero {
-                padding: 80px 0 60px;
+            header {
+                padding: 40px 20px;
             }
             
-            .hero h1 {
-                font-size: 2.2rem;
+            h1 {
+                font-size: 2rem;
             }
             
-            .hero-subtitle {
+            .subtitle {
                 font-size: 1.1rem;
             }
             
-            .kokina-features {
-                grid-template-columns: 1fr;
-            }
-            
-            .symbolism-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .message-header {
-                flex-direction: column;
-                text-align: center;
-                gap: 15px;
+            .symbolism {
+                gap: 20px;
             }
         }
         
         /* Animasyonlar */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         .fade-in {
-            animation: fadeInUp 0.8s ease forwards;
+            animation: fadeIn 0.8s ease forwards;
         }
         
-        .delayed-1 {
-            animation-delay: 0.2s;
+        .heart {
+            color: #FF4081;
+            animation: heartbeat 1.5s infinite;
+            display: inline-block;
         }
         
-        .delayed-2 {
-            animation-delay: 0.4s;
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
         }
         
-        .delayed-3 {
-            animation-delay: 0.6s;
+        /* Garantili resim yedek sistemi */
+        .image-backup {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #0A3D2E 0%, #1B5E45 100%);
+            color: white;
+            border-radius: 16px;
+        }
+        
+        .image-backup i {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: var(--accent);
         }
     </style>
 </head>
 <body>
-    <!-- Hero Bölümü -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="fade-in">Rabia Zeynep'e Özel Kokina</h1>
-                <div class="divider fade-in delayed-1"></div>
-                <p class="hero-subtitle fade-in delayed-2">Yeni yıla şans, bereket ve mutlulukla başlamanız dileğiyle hazırlanmış özel bir hediye</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Kokina Görsel Bölümü -->
-    <section class="kokina-showcase">
-        <div class="container">
-            <div class="kokina-container">
-                <div class="kokina-image fade-in">
-                    <div class="kokina-badge">Geleneksel Sembol</div>
-                    <img src="https://images.unsplash.com/photo-1570913199992-91d07c140e7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Gerçek Kokina Buketi" class="kokina-main-img">
-                </div>
-                <div class="kokina-details fade-in delayed-1">
-                    <h2>Özel Kokina Buketi</h2>
-                    <p>Kokina, yılbaşı döneminde şans ve bereket getirmesi amacıyla hazırlanan geleneksel bir süslemedir. Kırmızı kokina meyveleri ve yeşil yapraklarıyla hem görsel bir şölen sunar hem de derin anlamlar taşır.</p>
-                    
-                    <div class="kokina-features">
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <i class="fas fa-leaf"></i>
-                            </div>
-                            <div>
-                                <h4>Doğal Malzemeler</h4>
-                                <p>%100 doğal dallar ve meyveler</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <i class="fas fa-award"></i>
-                            </div>
-                            <div>
-                                <h4>Özel Tasarım</h4>
-                                <p>El yapımı ve özenle hazırlandı</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <i class="fas fa-gift"></i>
-                            </div>
-                            <div>
-                                <h4>Özel Hediye Paketi</h4>
-                                <p>Lüks hediye kutusunda sunulur</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">
-                                <i class="fas fa-seedling"></i>
-                            </div>
-                            <div>
-                                <h4>Uzun Ömürlü</h4>
-                                <p>Uzun süre tazeliğini korur</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <p>Bu özel buket, geleneksel kokina tarzında hazırlanmış olup, yeni yılda size iyi şans getirmesi dileğiyle sunulmaktadır.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mesaj Bölümü -->
-    <section class="message-section">
-        <div class="container">
-            <div class="message-container fade-in">
-                <div class="message-header">
-                    <div class="message-icon">
-                        <i class="fas fa-envelope-open-text"></i>
-                    </div>
-                    <h2>Rabia Zeynep'e Mesajım</h2>
-                </div>
+    <div class="container fade-in">
+        <header>
+            <h1>Rabia Zeynep'e <span class="heart">❤️</span> Kokina</h1>
+            <p class="subtitle">Yeni yıla şans, bereket ve mutlulukla başlamanız dileğiyle hazırlanmış özel bir hediye</p>
+        </header>
+        
+        <div class="content">
+            <div class="image-section">
+                <div class="image-badge">Geleneksel Sembol</div>
                 
-                <div class="message-text">
-                    <p>Merhaba Rabia Zeynep,</p>
-                    
-                    <p>Yeni yılın yaklaştığı bu günlerde, size içten dileklerimi iletmek istedim. Yeni tanışmış olsak da, umarım önümüzdeki yıl güzel bir dostluğun başlangıcı olur.</p>
-                    
-                    <p>Bu geleneksel kokina, yeni yılda size şans, sağlık ve başarı getirmesi dileğiyle hazırlandı. Kokinanın her bir dalında bir iyi dilek, her bir meyvesinde bir mutluluk umudu saklı.</p>
-                    
-                    <p>Yeni yılın size ve sevdiklerinize sağlık, mutluluk ve başarı getirmesini diliyorum. Tüm hayallerinizin gerçekleşeceği, harika bir yıl geçirmenizi temenni ediyorum.</p>
-                    
-                    <p>Tanıştığımıza memnun oldum ve umarım yeni yılda daha nice güzel sohbetlerimiz olur.</p>
-                </div>
+                <!-- BİRİNCİ RESİM (GARANTİLİ) -->
+                <img src="https://cdn.pixabay.com/photo/2016/12/04/21/58/christmas-wreath-1882347_1280.jpg" 
+                     alt="Geleneksel Kokina Buketi" 
+                     class="kokina-image"
+                     onerror="this.style.display='none'; document.getElementById('backupImage').style.display='block';">
                 
-                <div class="signature">
-                    <div class="signature-name">Hüseyin</div>
-                    <div class="signature-title">İyi Dileklerimle</div>
+                <!-- YEDEK GÖSTERİM (RESİM YÜKLENEMEZSE) -->
+                <div id="backupImage" class="image-backup">
+                    <i class="fas fa-gift"></i>
+                    <h3 style="color: white; margin-bottom: 10px;">Gerçek Kokina Buketi</h3>
+                    <p style="opacity: 0.9;">Geleneksel kokina buketi: Kırmızı meyveler ve yeşil yapraklarla<br>şans ve bereket sembolü</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Sembolizm Bölümü -->
-    <section class="symbolism-section">
-        <div class="container">
-            <h2 class="section-title fade-in">Kokina'nın Sembolizmi</h2>
             
-            <div class="symbolism-grid">
-                <div class="symbolism-card fade-in">
-                    <div class="symbolism-icon">
-                        <i class="fas fa-clover"></i>
+            <div class="message-section">
+                <div class="message-box">
+                    <h2><i class="fas fa-gift"></i> Özel Kokina Buketi</h2>
+                    <div class="message-text">
+                        <p>Kokina, yılbaşı döneminde şans ve bereket getirmesi amacıyla hazırlanan geleneksel bir süslemedir. Kırmızı kokina meyveleri iyi şansı, yeşil yaprakları ise bolluk ve bereketi temsil eder.</p>
+                        <p>Bu özel buket, size yeni yılda:</p>
+                        <ul style="padding-left: 20px; margin: 15px 0;">
+                            <li>Şans ve iyi talih getirmesi</li>
+                            <li>Sağlık ve mutluluk dilekleri</li>
+                            <li>Bolluk ve bereket</li>
+                            <li>Yeni başlangıçların habercisi olması</li>
+                        </ul>
+                        <p>için özenle hazırlanmıştır. Umarım yeni yıl size ve sevdiklerinize tüm güzellikleri getirir.</p>
                     </div>
-                    <h3>Şans</h3>
-                    <p>Kırmızı kokina meyveleri, yeni yılda iyi şansı ve pozitif enerjiyi temsil eder.</p>
-                </div>
-                
-                <div class="symbolism-card fade-in delayed-1">
-                    <div class="symbolism-icon">
-                        <i class="fas fa-coins"></i>
+                    
+                    <div class="signature">
+                        <div class="signature-name">Hüseyin</div>
+                        <div style="color: #666; font-size: 0.95rem;">İyi Dileklerimle</div>
                     </div>
-                    <h3>Bereket</h3>
-                    <p>Yeşil yapraklar bolluğu, bereketi ve maddi-manevi zenginliği simgeler.</p>
-                </div>
-                
-                <div class="symbolism-card fade-in delayed-2">
-                    <div class="symbolism-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Koruma</h3>
-                    <p>Geleneksel inanışa göre kokina, evi ve aileyi negatif enerjilerden korur.</p>
-                </div>
-                
-                <div class="symbolism-card fade-in delayed-3">
-                    <div class="symbolism-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Mutluluk</h3>
-                    <p>Canlı kırmızı rengi neşe, mutluluk ve pozitifliği çağrıştırır.</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">Kokina</div>
-                <p class="footer-text">Bu dijital hediye, gerçek bir kokina buketinin yanında size özel mesajımı iletmek amacıyla hazırlanmıştır. Yeni yılınız kutlu olsun.</p>
-                <div class="copyright">
-                    <p>© 2023 Hüseyin | Rabia Zeynep'e Özel Hediye | Tüm iyi dileklerimle</p>
+        
+        <footer>
+            <div class="symbolism">
+                <div class="symbol">
+                    <i class="fas fa-clover"></i>
+                    <span>Şans</span>
+                </div>
+                <div class="symbol">
+                    <i class="fas fa-coins"></i>
+                    <span>Bereket</span>
+                </div>
+                <div class="symbol">
+                    <i class="fas fa-heart"></i>
+                    <span>Mutluluk</span>
+                </div>
+                <div class="symbol">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Koruma</span>
+                </div>
+                <div class="symbol">
+                    <i class="fas fa-seedling"></i>
+                    <span>Büyüme</span>
                 </div>
             </div>
-        </div>
-    </footer>
+            <p style="margin-top: 30px;">Bu dijital hediye, gerçek bir kokina buketinin yanında size özel mesajımı iletmek için hazırlanmıştır.</p>
+            <p style="margin-top: 10px; font-size: 0.9rem; color: var(--primary); font-weight: 600;">Yeni Yılınız Kutlu Olsun!</p>
+        </footer>
+    </div>
 
     <script>
-        // Scroll animasyonları
         document.addEventListener('DOMContentLoaded', function() {
-            // Fade-in animasyonları için
-            const fadeElements = document.querySelectorAll('.fade-in');
+            // Kalp animasyonu
+            const heart = document.querySelector('.heart');
+            heart.addEventListener('click', function() {
+                alert('Yeni yılın kutlu olsun Rabia Zeynep! 🎄✨\n\nSize bol şans, sağlık ve mutluluk getirmesi dileğiyle...');
+            });
             
-            const fadeInOnScroll = function() {
-                fadeElements.forEach(element => {
-                    const elementTop = element.getBoundingClientRect().top;
-                    const elementVisible = 150;
-                    
-                    if (elementTop < window.innerHeight - elementVisible) {
-                        element.style.opacity = "1";
-                        element.style.transform = "translateY(0)";
-                    }
-                });
-            };
-            
-            // Sayfa yüklendiğinde ve scroll edildiğinde animasyonları tetikle
-            window.addEventListener('scroll', fadeInOnScroll);
-            fadeInOnScroll(); // Sayfa yüklendiğinde de çalışsın
-            
-            // Kokina resmine hover efekti
-            const kokinaImage = document.querySelector('.kokina-main-img');
-            if (kokinaImage) {
-                kokinaImage.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-10px) scale(1.02)';
+            // Görsel hover efekti
+            const image = document.querySelector('.kokina-image');
+            if (image) {
+                image.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.03) rotate(1deg)';
                 });
                 
-                kokinaImage.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
+                image.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1) rotate(0deg)';
                 });
             }
-            
-            // Sembolizm kartlarına hover efekti
-            const symbolismCards = document.querySelectorAll('.symbolism-card');
-            symbolismCards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.15)';
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    this.style.boxShadow = 'var(--shadow)';
-                });
-            });
             
             // Sayfa yüklendiğinde hoş geldin mesajı
             setTimeout(() => {
-                const welcomeMsg = document.createElement('div');
-                welcomeMsg.style.cssText = `
-                    position: fixed;
-                    bottom: 20px;
-                    right: 20px;
-                    background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
-                    color: white;
-                    padding: 15px 25px;
-                    border-radius: 10px;
-                    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-                    z-index: 1000;
-                    animation: fadeInOut 4s ease forwards;
-                    font-weight: 500;
-                    max-width: 300px;
+                const msg = document.createElement('div');
+                msg.innerHTML = `
+                    <div style="
+                        position: fixed;
+                        top: 20px;
+                        right: 20px;
+                        background: linear-gradient(135deg, #8B0000, #D4AF37);
+                        color: white;
+                        padding: 15px 25px;
+                        border-radius: 12px;
+                        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                        z-index: 1000;
+                        animation: fadeInOut 3s ease forwards;
+                        font-weight: 500;
+                        max-width: 300px;
+                        text-align: center;
+                    ">
+                        <i class="fas fa-star" style="margin-right: 10px;"></i>
+                        Rabia Zeynep için özel hediye hazır!
+                    </div>
                 `;
-                welcomeMsg.innerHTML = '<i class="fas fa-gift" style="margin-right: 10px;"></i> Rabia Zeynep için özel hediye hazır!';
-                document.body.appendChild(welcomeMsg);
+                document.body.appendChild(msg);
                 
-                // 4 saniye sonra mesajı kaldır
-                setTimeout(() => {
-                    welcomeMsg.remove();
-                }, 4000);
+                // 3 saniye sonra kaldır
+                setTimeout(() => msg.remove(), 3000);
             }, 1000);
+            
+            // Resim yükleme kontrolü
+            setTimeout(() => {
+                const img = document.querySelector('.kokina-image');
+                if (img && (img.naturalWidth === 0 || img.complete === false)) {
+                    console.log('Resim yüklenemedi, yedek aktifleştiriliyor...');
+                    img.style.display = 'none';
+                    document.getElementById('backupImage').style.display = 'block';
+                }
+            }, 2000);
         });
         
-        // CSS animasyonu ekleyelim
+        // CSS animasyonu ekle
         const style = document.createElement('style');
         style.textContent = `
             @keyframes fadeInOut {
-                0% { opacity: 0; transform: translateY(20px); }
+                0% { opacity: 0; transform: translateY(-20px); }
                 20% { opacity: 1; transform: translateY(0); }
                 80% { opacity: 1; transform: translateY(0); }
-                100% { opacity: 0; transform: translateY(20px); }
-            }
-            
-            /* Başlangıçta fade-in elemanları gizle */
-            .fade-in {
-                opacity: 0;
-                transform: translateY(30px);
-                transition: opacity 0.8s ease, transform 0.8s ease;
+                100% { opacity: 0; transform: translateY(-20px); }
             }
         `;
         document.head.appendChild(style);
